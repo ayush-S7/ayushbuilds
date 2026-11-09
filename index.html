@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayush Singh – Full stack developer for hire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f8;--ink:#14171a;--muted:#5b6670;--line:#d8dde1;--accent:#0b6b4f;--dot:#c3cad1;--b1:#9be3c8;--b2:#bcd0ff;--spot:rgba(11,107,79,.14);--b3:#d9c8ff;--dot2:#0b6b4f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1214;--ink:#eef1f3;--muted:#98a3ac;--line:#273036;--accent:#4fd1a5;--dot:#2a343b;--b1:#0f5a45;--b2:#23306b;--spot:rgba(79,209,165,.16);--b3:#3a2a6b;--dot2:#4fd1a5}}
+:root[data-theme="dark"]{--bg:#0f1214;--ink:#eef1f3;--muted:#98a3ac;--line:#273036;--accent:#4fd1a5;--dot:#2a343b;--b1:#0f5a45;--b2:#23306b;--spot:rgba(79,209,165,.16);--b3:#3a2a6b;--dot2:#4fd1a5}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 "Schibsted Grotesk",system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:4px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+main{max-width:720px;margin:0 auto;padding:56px 22px 40px}
+.me{font-weight:600;margin:0 0 56px}
+h1{font-size:clamp(38px,8vw,70px);line-height:1.04;font-weight:800;letter-spacing:-.03em;margin:0 0 28px}
+.lead{font-size:clamp(20px,3vw,24px);line-height:1.5;margin:0 0 20px;max-width:34ch}
+p{margin:0 0 18px;max-width:58ch}
+h2{font-size:22px;margin:64px 0 14px;font-weight:800}
+.build{font-size:clamp(22px,4vw,30px);line-height:1.35;font-weight:600;max-width:24ch;margin:0}
+.build span{color:var(--muted)}
+.work{border-top:1px solid var(--line);padding-top:18px}
+.work p{color:var(--muted)}
+.mail{display:inline-block;font-size:clamp(20px,4.6vw,32px);font-weight:800;letter-spacing:-.01em;word-break:break-all}
+.links{margin-top:18px;display:flex;gap:22px;flex-wrap:wrap;font-weight:600}
+footer{margin-top:72px;color:var(--muted);font-size:14px}
+.word{color:var(--accent);display:inline-block;transition:opacity .25s,transform .25s}
+.word.out{opacity:0;transform:translateY(.2em)}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.me,h1,.lead{animation:in .7s both}h1{animation-delay:.1s}.lead{animation-delay:.25s}
+.opts{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.opts button{font:inherit;font-size:16px;font-weight:600;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer;transition:background .15s,border-color .15s}
+.opts button:hover{border-color:var(--accent)}
+.opts button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+#pick{border-left:3px solid var(--accent);padding:2px 0 2px 18px;min-height:120px;max-width:58ch}
+#pick p{margin:0 0 10px}
+.tg{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:4px;padding:0;margin-left:12px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--dot) 1.2px,transparent 1.2px);background-size:26px 26px;-webkit-mask-image:radial-gradient(ellipse at 30% 20%,#000,transparent 80%);mask-image:radial-gradient(ellipse at 30% 20%,#000,transparent 80%)}
+.grid2{position:absolute;inset:0;background-image:radial-gradient(var(--dot2) 2px,transparent 2px);background-size:26px 26px;-webkit-mask-image:radial-gradient(circle 200px at var(--mx,-999px) var(--my,-999px),#000,transparent);mask-image:radial-gradient(circle 200px at var(--mx,-999px) var(--my,-999px),#000,transparent)}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;animation:drift 22s ease-in-out infinite alternate}
+.b1{width:46vmax;height:46vmax;background:var(--b1);left:-12vmax;top:-14vmax}
+.b2{width:38vmax;height:38vmax;background:var(--b2);right:-10vmax;top:26vh;animation-duration:28s;animation-delay:-8s}
+.b3{width:34vmax;height:34vmax;background:var(--b3);left:12vw;bottom:-16vmax;animation-duration:34s;animation-delay:-14s}
+.spot{position:absolute;width:520px;height:520px;border-radius:50%;left:0;top:0;transform:translate(var(--mx,-999px),var(--my,-999px)) translate(-50%,-50%);background:radial-gradient(var(--spot),transparent 65%);transition:transform .12s ease-out}
+.noise{position:absolute;inset:0;opacity:.09;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(7vmax,5vmax) scale(1.18)}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><div class="grid2"></div><div class="spot"></div><div class="noise"></div></div>
+<main>
+<p class="me">Ayush Singh</p>
+<h1>I build <span id="w" class="word">websites</span>.</h1>
+<p class="lead">I’m a full stack developer from India, and I take on projects of all kinds, for people anywhere in the world.</p>
+<p>I’m early in my freelance career, so every project gets my full attention. You’ll talk to me directly, not to an agency, and I’ll tell you plainly what’s possible before you pay anything.</p>
+
+<h2>What I can build for you</h2>
+<p class="build">A website for your business. <span>An online store. A booking or ordering system. A dashboard or admin tool. A web app from your idea. The backend and API behind it. Or fixes and upgrades for a site you already have.</span></p>
+
+<h2>Tell me what you need</h2>
+<div class="opts" id="opts" role="group" aria-label="Choose a project type">
+<button type="button" data-k="site">A business website</button>
+<button type="button" data-k="store">An online store</button>
+<button type="button" data-k="book">Bookings or orders</button>
+<button type="button" data-k="dash">A dashboard</button>
+<button type="button" data-k="app">A web app</button>
+<button type="button" data-k="fix">Fix my site</button>
+</div>
+<div id="pick" aria-live="polite"><p>Pick one above and I’ll show how I’d approach it and how long it usually takes.</p></div>
+
+<h2>Recent work</h2>
+<div class="work">
+<p><a href="https://smilecraftdental-sample.netlify.app">SmileCraft Dental</a> is a concept website I designed for a dental clinic. Visitors choose their problem, see a typical cost in rupees and request an appointment in one step.</p>
+</div>
+
+<h2>How we’d work together</h2>
+<p>Send me a short message about what you need and your budget. I’ll reply within a day with questions, a fixed price and a time estimate. I work half upfront and half on delivery, and you see the site before it goes live.</p>
+
+<h2>Say hello</h2>
+<a class="mail" href="mailto:hello.ayushsingh10@gmail.com?subject=Project%20enquiry">hello.ayushsingh10@gmail.com</a>
+<div class="links"><a href="https://github.com/ayushS7">GitHub</a><a href="https://linkedin.com/in/ayush-singh-9252a2386">LinkedIn</a></div>
+
+<footer>© 2026 Ayush Singh. Email first, and calls at a time that suits you. <span id="t"></span><button class="tg" id="tg" type="button">Switch light/dark</button></footer>
+</main>
+<script>
+var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var W=["websites","web apps","online stores","dashboards","booking systems"],wi=0,w=document.getElementById("w");
+if(!rm)setInterval(function(){w.classList.add("out");setTimeout(function(){wi=(wi+1)%W.length;w.textContent=W[wi];w.classList.remove("out")},260)},2600);
+var P={
+site:["A business website","A fast, mobile-friendly site that explains what you do and makes it easy to contact you. We start with a mockup of your homepage.","Usually 1–2 weeks"],
+store:["An online store","Product pages, a cart and checkout with online payments, plus a simple way for you to add and edit products.","Usually 2–4 weeks"],
+book:["Bookings or orders","Let customers book appointments or place orders online, with a confirmation sent to you and to them.","Usually 2–3 weeks"],
+dash:["A dashboard","Your numbers, charts and tables in one place, with login so only the right people can see them.","Usually 2–4 weeks"],
+app:["A web app","Your idea built end to end: the screens, the database and the backend. We begin with a small first version you can try.","Depends on the idea, so I’ll estimate after a short chat"],
+fix:["Fix my site","Bugs, slow pages, broken layouts on phones or small changes to a site you already have.","Often 1–3 days"]};
+document.getElementById("opts").addEventListener("click",function(e){
+ var b=e.target.closest("button");if(!b)return;
+ this.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+ var d=P[b.dataset.k],o=document.getElementById("pick");o.textContent="";
+ var a=document.createElement("p"),c=document.createElement("p"),l=document.createElement("a");
+ a.textContent=d[1];c.textContent=d[2]+".";l.textContent="Email me about this";
+ l.href="mailto:hello.ayushsingh10@gmail.com?subject="+encodeURIComponent("Project enquiry: "+d[0])+"&body="+encodeURIComponent("Hi Ayush,\n\nI need: "+d[0]+"\n\nAbout my project:\n");
+ o.appendChild(a);o.appendChild(c);o.appendChild(l);
+});
+function tick(){document.getElementById("t").textContent="It’s "+new Date().toLocaleTimeString("en-US",{timeZone:"Asia/Kolkata",hour:"numeric",minute:"2-digit"})+" in India right now."}
+tick();setInterval(tick,30000);
+document.getElementById("tg").addEventListener("click",function(){
+ var r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+ r.dataset.theme=cur==="dark"?"light":"dark";
+});
+if(!rm&&matchMedia("(hover:hover)").matches)addEventListener("pointermove",function(e){var s=document.querySelector(".bg").style;s.setProperty("--mx",e.clientX+"px");s.setProperty("--my",e.clientY+"px")});
+</script>
+</body>
+</html>
